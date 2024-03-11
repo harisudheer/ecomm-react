@@ -41,7 +41,7 @@ export default function Fruits() {
    ]
   return (
     <div>
-        {fruits.map((value,index)=>(
+        {fruits.map((value,key)=>(
             <div class="container">
                 <div><img src={value.image} width={175} height={150} alt='fruitimg'></img></div>
                 <div id="fname">{value.name}</div>
@@ -53,5 +53,5 @@ export default function Fruits() {
             ))
         }
     </div>
-  )
+  ) 
 }
